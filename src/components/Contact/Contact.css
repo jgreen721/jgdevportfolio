@@ -17,6 +17,12 @@
   background-attachment: fixed;
 }
 
+.contact-header h1 {
+  text-align: center;
+  letter-spacing: 2rem;
+  font-weight: 10;
+}
+
 .contact-card {
   /* width: clamp(800px, 90%); */
   /* border: 2px solid green; */
@@ -43,6 +49,7 @@
 .form-div {
   padding: 0rem 2rem;
   padding-bottom: 4rem;
+  width: 100%;
   /* border: 2px solid grey; */
 }
 
@@ -86,12 +93,19 @@
   }
 
   .contact-col {
-    display: flex;
+    /* display: flex; */
+    width: 100%;
+    /* border: 2px solid red; */
+    gap: 2rem;
   }
 
   .form-div {
     padding: 2rem 0rem;
-    padding-right: 4rem;
+    /* padding-right: 4rem; */
     /* border: 2px solid grey; */
+  }
+
+  .contact-header h1 {
+    letter-spacing: 1rem;
   }
 }

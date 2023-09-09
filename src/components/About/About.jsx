@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import "./About.css"
 
 const About = () => {
@@ -8,10 +8,20 @@ const About = () => {
     {id:3,title:"The pandemic boost", blurb:"Daily practice of a few hours became daily practice of full days, consuming YT builds/tutorials to build off everything I learned in bootcamp. Gained deeper understanding of design and coding principals."},
     {id:4,title:"And now", blurb:"Continuing my learning in lower level languages while always practicing front-end design thru challenge websites and applying for work opportunity to learn and grow from."}
   ]
+
+
   return (
     <div className="about-section">
-      <h1 className="about-header"><em>About</em> Me</h1>
-      <p className="about-blurb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae quisquam repudiandae ipsa fugiat, odio doloribus molestias debitis voluptates neque maiores! Asperiores porro enim perferendis vero laboriosam nam, possimus, vitae delectus blanditiis aperiam debitis fugit laborum omnis, amet fugiat accusantium praesentium! Ab quam tenetur officia laborum a quibusdam eaque rerum esse earum accusantium. Iusto repellendus adipisci quae optio natus, minus soluta ea quasi tempore maxime commodi aspernatur reiciendis esse voluptatum. Corporis deserunt odio at natus nemo nisi laborum cum ea similique ducimus? Voluptatum nihil iure magni ex, consequuntur quidem itaque aliquam, libero enim, deleniti sapiente qui. Laudantium animi, voluptatum unde tempora officiis eligendi, omnis veritatis et nulla assumenda fugit voluptate, suscipit deleniti enim necessitatibus totam qui blanditiis iure ea officia illo hic molestias! Doloremque voluptas, beatae veniam, impedit necessitatibus facere sunt esse omnis quos, laboriosam in voluptatibus. Inventore voluptas repudiandae quam ipsum blanditiis dolor maxime quod sit reprehenderit dolores perspiciatis sequi molestias accusamus ut eum amet, molestiae accusantium atque! Accusamus, vitae! Ex animi laboriosam in molestias nesciunt quasi consequatur omnis qui natus ullam, hic molestiae possimus perferendis magnam beatae. Nihil quia odio, dolores id excepturi voluptates, minus repellendus, ab nobis voluptatibus ex earum minima debitis mollitia autem. Officia, nisi doloribus. Eaque doloribus, vel ut omnis nostrum illo minus consequatur molestias aut unde suscipit delectus ullam qui enim saepe aperiam nobis! Iure praesentium hic placeat architecto a laboriosam dolore est veritatis, fuga dignissimos aliquid modi reprehenderit vitae earum deserunt dicta, repellat ducimus optio assumenda fugit iste dolorem autem? Consequatur fugiat asperiores optio obcaecati corrupti debitis perferendis? Nostrum, itaque reiciendis voluptate, possimus praesentium nulla hic saepe quo, iste amet dolorem vitae sit repellendus quidem assumenda. Sapiente iure accusantium, inventore veniam, vitae ipsam error minima nisi autem dolore pariatur cupiditate. Quam facilis quos, numquam tempora vel atque repellendus nesciunt modi. Laudantium aspernatur laborum doloribus enim officia, est modi libero voluptate expedita vitae corporis unde voluptatum iste nostrum fuga dolorem quia odio veniam eveniet. Eius aut accusamus voluptatibus. Recusandae harum rem ab, cumque voluptatum iure nesciunt atque rerum similique, laboriosam libero quaerat necessitatibus iusto doloremque ducimus mollitia eos odio veritatis temporibus, pariatur assumenda? Alias, minima!</p>
+      <div className="about-header">
+        <div className="about-em">
+          <h1> About</h1>
+        </div> 
+        <div className="me-h1">
+          <h1>Me</h1>
+        </div>
+      </div>
+
+      <p className="about-blurb">Programming for 5+ years. Got started on codecademies and then enrolled into a <span className="gasp">(gasp)</span> bootcamp with a 24 week MERN stack program at <span className="ucla">UCLA</span>. From there, continued daily practice and digesting the learned material. Pandemic hit and the few hours a day became full-day investments of playing on the computer/consuming material off youtube. Now, dutifully knocking off any challenge on <span className="frontendmentor">FrontEndMentor</span> with pixal perfect conversion of design file templates.</p>
     </div>
   )
 }

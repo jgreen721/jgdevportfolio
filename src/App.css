@@ -17,6 +17,7 @@
   background: var(--mainBg);
   color: var(--mainColor);
   font-family: var(--mainFont);
+  overflow-x: hidden;
 }
 
 .app-content {

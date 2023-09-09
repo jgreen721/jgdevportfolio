@@ -3,6 +3,78 @@
   text-align: center;
 }
 
+.about-header {
+  font-size: 7rem;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.about-em {
+  color: var(--mintgreen);
+  transform: translateX(-100vw);
+
+  animation: slidein 1s forwards;
+}
+
+@keyframes slidein {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.me-h1 {
+  font-weight: 200;
+  position: relative;
+  transform: scale(0);
+  animation: grow 1s 1s forwards;
+}
+
+.me-h1::after {
+  content: "Me";
+  color: white;
+  /* background: white; */
+  /* width: px; */
+  /* height: 50px; */
+  position: absolute;
+  bottom: -45px;
+  left: 0px;
+  font-weight: 500;
+  /* right: -35px; */
+  transform: rotateX(247deg) rotateZ(5deg) scale(0);
+  background-image: linear-gradient(
+    white,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: blur(3px);
+  transition: 0.2s ease-out;
+  animation: growshadow 0.5s 1.15s forwards;
+}
+
+@keyframes grow {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes growshadow {
+  100% {
+    transform: rotateX(247deg) rotateZ(5deg) scale(1);
+  }
+}
+
 .about-blurb {
   font-size: 2rem;
   line-height: 3rem;

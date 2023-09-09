@@ -16,6 +16,13 @@ const Footer = () => {
           <a href="https://codepen.io/jgreen721" target="_blank" className="footer-media-link">CodePen</a>
         </li>
       </ul>
+      {/* <div className="footer-overlay"> */}
+      <svg viewBox="0 0 1320 300">
+
+  <path fill="rgb(0, 250, 154)" fillOpacity='0.5'/>
+  <path fill="#00d2d3" fillOpacity='0.5'/>  
+</svg>
+      {/* </div> */}
     </footer>
   )
 }
