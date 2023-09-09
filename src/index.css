@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Roboto:wght@100;500;900&display=swap");
+
+/* global defaults/settings */
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainPaddingX: 10rem;
+  --mainFont: "Roboto", sans-serif;
+  --secondaryFont: "Dosis", sans-serif;
+  --black: black;
+  --white: white;
+  --mintgreen: mediumspringgreen;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainColor);
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.1rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-start {
+  align-content: flex-start;
+}
+
+.align-end {
+  align-content: flex-end;
+}
+
+.align-center {
+  align-content: center;
+}
+
+@media screen and (max-width: 950px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  :root {
+    --mainPaddingX: 2rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+}

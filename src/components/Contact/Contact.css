@@ -1,0 +1,97 @@
+.contact-section {
+  /* height: 100vh; */
+  padding: var(--mainPaddingX);
+  /* border: 3px solid red; */
+  position: relative;
+}
+
+.contact-overlay {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  /* border: 2px solid pink; */
+  left: 0;
+  /* top: 30rem; */
+  bottom: 20rem;
+  background-image: url("./contactbg.jpg");
+  background-attachment: fixed;
+}
+
+.contact-card {
+  /* width: clamp(800px, 90%); */
+  /* border: 2px solid green; */
+  margin: 0 auto;
+  padding: 4rem 0;
+  opacity: 70%;
+}
+
+.contact-form {
+  display: flex;
+}
+
+.contact-col {
+  flex: 1;
+  padding: 2rem;
+  position: relative;
+}
+
+.contact-col:nth-child(2) {
+  flex: 2;
+  /* border: 2px solid blue; */
+}
+
+.form-div {
+  padding: 0rem 2rem;
+  padding-bottom: 4rem;
+  /* border: 2px solid grey; */
+}
+
+.form-control {
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.contact-textarea {
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 1.5rem;
+  min-height: 300px;
+  font-size: 2rem;
+}
+
+.contact-textarea::placeholder {
+  font-family: var(--mainFont);
+}
+
+.contact-btn {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+  padding: 1rem 2rem;
+  background: transparent;
+  border-radius: 0.8rem;
+}
+
+@media screen and (max-width: 950px) {
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .contact-col {
+    display: flex;
+  }
+
+  .form-div {
+    padding: 2rem 0rem;
+    padding-right: 4rem;
+    /* border: 2px solid grey; */
+  }
+}

@@ -1,0 +1,29 @@
+.app[data-theme="light"] {
+  --mainColor: var(--black);
+  --mainBg: var(--white);
+}
+
+.app[data-theme="dark"] {
+  --mainColor: var(--white);
+  --mainBg: var(--black);
+}
+
+.app {
+  min-height: 100vh;
+  max-width: 144rem;
+  margin: 0 auto;
+  border: 2px solid black;
+  position: relative;
+  background: var(--mainBg);
+  color: var(--mainColor);
+  font-family: var(--mainFont);
+}
+
+.app-content {
+  padding-top: 12rem; /*offset navbar height*/
+}
+
+.blur-app {
+  filter: blur(5px);
+  /* border: 5px solid red; */
+}

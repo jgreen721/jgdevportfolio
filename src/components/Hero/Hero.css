@@ -1,0 +1,126 @@
+.hero {
+  position: relative;
+  height: 65vh;
+  background-image: url("./herobg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  filter: blur(0px);
+  transition: 1s;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url("./herobg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  filter: blur(5px);
+  transform: scale(1) rotate(0);
+  transition: 0.3s ease-in;
+  height: 100%;
+} */
+
+.hero::after {
+  background: white;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 75%;
+  transition: 1s;
+  animation: fadeopacity 2s 1s forwards;
+}
+
+@keyframes fadeopacity {
+  100% {
+    opacity: 0%;
+  }
+}
+
+/* .hero:hover .hero-overlay {
+  filter: blur(0px);
+  transform: scale(1.12) rotate(2deg);
+} */
+
+.hero:hover::after {
+  opacity: 0%;
+}
+
+.hero-content {
+  padding: 3rem;
+  transform: scale(0);
+  animation: scaleherotext 1s 2s forwards;
+}
+
+.hero-h1 {
+  text-shadow: 0px 0px 1px black, 0px 0px 1px var(--mintgreen),
+    0px 0px 10px var(--mintgreen), 0px 0px 30px var(--mintgreen);
+  letter-spacing: 0.5rem;
+  margin: 1.5rem;
+  font-size: 10rem;
+  text-transform: uppercase;
+  /* animation: scaleherotext 1s var(--delay) forwards;
+  transform: scale(0); */
+  /* border: 2px solid red; */
+}
+
+@keyframes scaleherotext {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-h1-one {
+  transform: translateX(var(--offsetX));
+  --delay: 1s;
+  --offsetX: -7.5rem;
+}
+
+.hero-h1-two {
+  transform: translateX(var(--offsetX));
+  --delay: 1.5s;
+  --offsetX: 7.5rem;
+}
+
+@media screen and (max-width: 950px) {
+  .hero {
+    height: 50vh;
+  }
+  .hero-h1 {
+    font-size: 7rem;
+  }
+
+  .hero-h1-one {
+    --offsetX: -5rem;
+  }
+
+  .hero-h1-two {
+    --offsetX: 5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero {
+    height: 35vh;
+  }
+  .hero-h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-h1-one {
+    --offsetX: -2rem;
+  }
+
+  .hero-h1-two {
+    --offsetX: 2rem;
+  }
+}

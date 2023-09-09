@@ -1,0 +1,115 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem var(--mainPaddingX);
+  border: 1px solid black;
+  position: fixed;
+  max-width: 144rem;
+  width: 100%;
+  top: 0;
+  background: var(--mainBg);
+  z-index: 100;
+}
+
+.nav-logo-header,
+.nav-links {
+  display: flex;
+}
+
+.nav-logo-header {
+  gap: 0.25rem;
+  animation: glow 3s forwards;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 100px 0px 1px white, 100px 0px 10px white, 100px 0px 30px white,
+      -100px 0px 1px white, -100px 0px 10px white, -100px 0px 30px white;
+  }
+
+  25% {
+    text-shadow: 0px 0px 1px white, 0px 0px 10px white, 0px 0px 30px white,
+      0px 0px 1px white, 0px 0px 10px white, 0px 0px 30px white;
+  }
+
+  100% {
+    text-shadow: 0px 0px 1px, 0px 0px 3px;
+  }
+}
+
+.nav-links {
+  gap: 5rem;
+  font-weight: 200;
+}
+
+.nav-link-h4 {
+  font-weight: 100;
+  opacity: 75%;
+  transition: 0.1s ease;
+  /* text-shadow: 0px 0px 10px var(--mintgreen); */
+}
+
+.nav-link-h4:hover {
+  opacity: 90%;
+  text-shadow: 0px 0px 1px white, 0px 0px 10px white, 5px 0px 5px white,
+    0px 0px 65px var(--mintgreen);
+}
+
+.mobile-nav-burger-parent {
+  /* position: relative; */
+  display: none;
+}
+
+.burger {
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.burger:hover {
+  transform: scale(1.1);
+}
+
+.line {
+  width: 50%;
+  height: 2px;
+  background: var(--mainColor);
+  transition: 0.5s ease-out;
+  transform-origin: center;
+}
+
+.lower-line {
+  transform: translateY(0.85rem) translateX(0rem) rotate(45deg);
+}
+
+.fade-line {
+  opacity: 0;
+}
+
+.raise-line {
+  transform: translateY(-0.55rem) rotate(-45deg);
+}
+
+@media screen and (max-width: 950px) {
+  .nav-links {
+    gap: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-nav-burger-parent {
+    display: block;
+  }
+}

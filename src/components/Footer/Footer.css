@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  border: 2px solid red;
+}
+
+.footer-media-links {
+  display: flex;
+  gap: 5rem;
+  margin: 3rem;
+}
