@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   height: 65vh;
-  background-image: url("./herobg.jpg");
+  background-image: url("/herobg.jpg");
   background-size: cover;
   background-attachment: fixed;
   filter: blur(0px);

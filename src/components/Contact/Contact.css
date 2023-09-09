@@ -13,7 +13,7 @@
   left: 0;
   /* top: 30rem; */
   bottom: 20rem;
-  background-image: url("./contactbg.jpg");
+  background-image: url("/contactbg.jpg");
   background-attachment: fixed;
 }
 
